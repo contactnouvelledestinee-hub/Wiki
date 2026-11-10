@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#c9a55a">
+<title>Page introuvable · Wiki Nouvelle Destinée</title>
+<link rel="icon" href="/img/favicon.png">
+<style>
+@font-face{font-family:'Cinzel';font-weight:600;font-display:swap;src:url(/fonts/Cinzel-600.woff2) format('woff2')}
+@font-face{font-family:'Spectral';font-weight:400;font-display:swap;src:url(/fonts/Spectral-400.woff2) format('woff2')}
+@font-face{font-family:'Spectral';font-weight:400;font-style:italic;font-display:swap;src:url(/fonts/Spectral-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Inter Variable';font-weight:100 900;font-display:swap;src:url(/fonts/Inter-variable.woff2) format('woff2')}
+:root{--papier:#f5ece2;--encre:#1c1a3f;--encre-2:#4a4766;--or:#c9a55a;--or-fonce:#8a6a2c;--halo:rgba(201,165,90,.28)}
+@media (prefers-color-scheme:dark){:root{--papier:#19143a;--encre:#efe6d6;--encre-2:#c9bfd8;--or:#e2c681;--or-fonce:#e2c681;--halo:rgba(226,198,129,.18)}}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{min-height:100vh;display:grid;place-items:center;padding:32px 16px;background:radial-gradient(70% 60% at 50% 30%,var(--halo),transparent 70%),var(--papier);color:var(--encre);font-family:'Spectral',Georgia,serif;text-align:center}
+main{max-width:560px}
+img{width:min(260px,70vw);height:auto;filter:drop-shadow(0 14px 20px rgba(0,0,0,.25))}
+.code{font-family:'Inter Variable',system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--or-fonce);margin:22px 0 6px}
+h1{font-family:'Cinzel',Georgia,serif;font-weight:600;font-size:clamp(26px,6vw,38px);line-height:1.2;margin:0 0 14px}
+p{font-size:19px;line-height:1.6;margin:0 0 26px;color:var(--encre-2)}
+a.btn{display:inline-block;font-family:'Inter Variable',system-ui,sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#1c1a3f;background:linear-gradient(100deg,#e2c681,#b8913f);padding:14px 26px;clip-path:polygon(4% 0,100% 0,96% 100%,0 100%)}
+a.btn:focus-visible{outline:3px solid var(--encre);outline-offset:4px}
+</style>
+</head>
+<body>
+<main>
+<img src="/img/logo.png" alt="Nouvelle Destinée" width="300" height="207">
+<div class="code">ERREUR 404</div>
+<h1>Ces terres ne figurent sur aucune carte</h1>
+<p>Même les cartographes Ailes de Nuit n’ont jamais tracé cette page. Le lien est peut-être ancien, ou mal recopié.</p>
+<a class="btn" href="/">Revenir à l’accueil</a>
+</main>
+</body>
+</html>
