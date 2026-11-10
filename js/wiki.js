@@ -355,6 +355,7 @@
           ${SECTIONS.map((s) => `<div><h2>${ico(s.icone)} ${esc(s.titre)}</h2><ul>${s.rubriques.map((r) => `<li><a href="${lienRub(r.id)}">${esc(r.titre)} <span class="compteur">${compterRubrique(r.id)}</span></a></li>`).join('')}</ul></div>`).join('')}
         </div>
         <p class="pied-mentions">Projet de fans, sans but lucratif. <em>Les Royaumes de Feu</em> (<em>Wings of Fire</em>) sont l’œuvre de Tui T. Sutherland ; la communauté n’est affiliée ni à l’autrice ni à ses éditeurs. Les clans, personnages et récits cités appartiennent à leurs auteurs ; les couvertures reproduites restent la propriété de leurs ayants droit.</p>
+        <p class="pied-mentions">Les textes, le code et le design du wiki sont protégés par le droit d’auteur. Toute reproduction ou réutilisation, même partielle, demande l’accord écrit de HCF Nouvelle Destinée. Les illustrations appartiennent à leurs artistes et ne peuvent pas être reprises sans leur accord.</p>
         <p class="pied-contact">${ico('lien')} Une erreur, un crédit manquant, une question ? Écris à ${lienMail('wiki')}</p>
         <nav class="pied-legal" aria-label="Informations légales">
           <a href="#p-mentions-legales">Mentions légales</a><a href="#p-cgu">Conditions générales d’utilisation</a><a href="#p-confidentialite">Politique de confidentialité</a><a href="#p-cookies">Cookies</a><a href="#r-credits">Crédits</a>
@@ -904,7 +905,7 @@
       <section class="hero${h.cls}"${h.style}><div class="conteneur">${ariane([{ t: s.titre }])}
         <div class="hero-grille"><div><div class="surtitre">${esc(s.surTitre)}</div><h1>${esc(s.titre)}</h1><p class="chapo">${esc(s.intro)}</p></div></div>
       </div>${h.credit}</section>
-      <div class="conteneur${arbre ? ' avec-arbre' : ' sans-arbre'}">${arbre ? arbreSection(s, null, null) : ''}<div class="contenu-intro"><div class="grille-cartes">${s.rubriques.map(carte).join('')}</div></div></div>`
+      <div class="conteneur${arbre ? ' avec-arbre' : ' sans-arbre'}">${arbre ? arbreSection(s, null, null) : ''}<div class="contenu-intro"><h2 class="sr">Les rubriques de « ${esc(s.titre)} »</h2><div class="grille-cartes">${s.rubriques.map(carte).join('')}</div></div></div>`
   }
   function vueRubrique(id) {
     const r = RUBRIQUES[id]

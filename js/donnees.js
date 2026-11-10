@@ -859,7 +859,7 @@ window.ND_DONNEES = {
    "ordre": 1,
    "lettrine": false,
    "icone": "personnes",
-   "banniere": "img/illustrations/baignade",
+   "banniere": "img/illustrations/mer-recif",
    "etiquettes": [
     "Communauté"
    ],
@@ -882,7 +882,8 @@ window.ND_DONNEES = {
     }
    ],
    "corps": "HCF – Nouvelle Destinée est un hub communautaire francophone autour des *Royaumes de Feu*, la saga de Tui T. Sutherland. Les communautés francophones de la saga sont nombreuses et éparpillées. Nouvelle Destinée les met en relation, et chaque structure garde son identité.\n\n## Nos objectifs\n- Rassembler les fans francophones des Royaumes de Feu.\n- Faire découvrir la saga à de nouveaux lecteurs.\n- Mettre en relation les communautés de la saga et partager leurs projets.\n- Mettre en avant les artistes de la communauté.\n\n## Ce que nous faisons\nNouvelle Destinée anime un serveur Discord, le site nouvelledestinee.fr, ce wiki, une chaîne YouTube et un compte Instagram. Les œuvres partagées y sont toujours créditées, avec des liens vers les pages de leurs auteurs. Nous travaillons aussi avec des structures partenaires, des serveurs affiliés, des artistes partenaires et des prestataires. Un projet RP existe en parallèle.\n\n## Une équipe de bénévoles\nL’équipe est répartie en cinq pôles.\n\n- Ressources Humaines (RH), pour le suivi des bénévoles.\n- Modération, Orientation et Support (MOS), pour la sécurité et l’accueil des membres.\n- Communication (COM).\n- Développement, Infrastructures & Technique (DIT).\n- Rôle Play (RP).\n\nChaque bénévole suit une formation adaptée à son niveau de responsabilité. Chaque formation validée donne un Sceau, et les cinq Sceaux réunis forment la Certification des Trois Lunes.\n\n## Les fondateurs\nNouvelle Destinée a été fondée en décembre 2025 par Skyline76, Akhaten, Éclipse, Azura, Pleine Lune et Mollie La Piaf. Leurs cartes sont sur la page [L’équipe](#r-equipe).\n\n## Nos valeurs\nNos actions reposent sur le partage, la création et l’entraide. Nous attendons de chaque bénévole et de chaque collaborateur du respect, une communication claire et la reconnaissance du travail des autres.\n\n## La sécurité des membres\nL’équipe de modération examine chaque signalement et écoute toutes les personnes concernées avant de prendre une décision. Le harcèlement, les insultes et les rumeurs ne sont pas tolérés. Le support et les signalements restent confidentiels, et seules les personnes chargées d’un dossier en connaissent les détails.\n\n## Où nous en sommes\nNouvelle Destinée est aujourd’hui une association de fait, gérée par une équipe de bénévoles. Les formations internes sont en cours de création, et certaines sont déjà prêtes. En 2027, Nouvelle Destinée deviendra une association culturelle à but non lucratif.\n\nAprès 2027, plusieurs projets sont prévus.\n\n- De grands événements en ligne entre communautés.\n- Des conventions et des rencontres en personne.\n- Un serveur Minecraft RP.\n- Des projets d’animation 2D et 3D, avec des studios de la communauté.\n\n:::encadre Nous rejoindre\n[discord.gg/nouvelledestinee](https://discord.gg/nouvelledestinee)\n:::",
-   "publieLe": "2026-11-11T11:00:00.000Z"
+   "publieLe": "2026-11-11T11:00:00.000Z",
+   "credit": "FrostieGreen"
   },
   "parcours-des-livres": {
    "titre": "De 2012 à aujourd’hui",
