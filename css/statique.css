@@ -1,0 +1,4 @@
+/* Ajouts propres à la version statique */
+.tableau-defile { overflow-x: auto; max-width: 100%; }
+.tableau-defile table { min-width: 100%; }
+.btn-compte svg { flex-shrink: 0; }
