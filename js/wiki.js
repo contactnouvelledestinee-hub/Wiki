@@ -16,22 +16,24 @@
   /* ---------------------------------------------------------------------- */
   const I = (n) => 'img/illustrations/' + n
   const SECTIONS = [
-    { id: 'accueil', titre: 'Accueil', icone: 'etoile', surTitre: 'La communauté', intro: 'La présentation du wiki, les actualités de la communauté, le règlement et notre Hub.',
+    { id: 'accueil', titre: 'Accueil', icone: 'etoile', surTitre: 'La communauté', intro: 'La présentation du wiki, les actualités, le règlement et notre communauté.',
       banniere: I('banniere-hcf'), credit: 'Tortipouss', rubriques: [
-      { id: 'presentation', titre: 'Présentation', icone: 'oeil', surTitre: 'Le wiki', chapo: 'La page d’accueil et la façon dont le wiki est organisé.', visuel: I('bibliothecaire-lanterne'), creditVisuel: 'Hesterli' },
+      { id: 'presentation', titre: 'Présentation', icone: 'oeil', surTitre: 'Le wiki', chapo: 'La page d’accueil et la façon dont le wiki est organisé.', visuel: I('dragonnets'), creditVisuel: 'Alizebe' },
+      { id: 'reglement', titre: 'Règlement', icone: 'balance', surTitre: 'À lire par tous', chapo: 'Les règles du wiki et de la communauté.', visuel: I('envol-karst'), creditVisuel: 'Nightrizer' },
+      { id: 'faq', titre: 'FAQ', icone: 'boussole', surTitre: 'Foire aux questions', chapo: 'Les réponses aux questions courantes sur Nouvelle Destinée, ses espaces et son fonctionnement.', visuel: I('royaume-nuit'), creditVisuel: 'Biohazardia' },
       { id: 'actus', titre: 'Actualités', icone: 'horloge', surTitre: 'Les news', tri: 'desc', chapo: 'Les nouvelles de la communauté et de la saga.', visuel: I('messager-hibou'), creditVisuel: 'Biohazardia' },
-      { id: 'reglement', titre: 'Règlement', icone: 'balance', surTitre: 'À lire par tous', chapo: 'Les règles du wiki et de la communauté.', visuel: I('montagne-fendue'), creditVisuel: 'Scholastic' },
-      { id: 'hub', titre: 'Notre Hub', icone: 'personnes', surTitre: 'La communauté', chapo: 'Le serveur Discord, nos réseaux et comment nous rejoindre.', visuel: I('mer-recif'), creditVisuel: 'FrostieGreen' },
-      { id: 'legal', titre: 'Informations légales', icone: 'parchemin', surTitre: 'Mentions, CGU, confidentialité', chapo: 'Les mentions légales, les conditions d’utilisation, la politique de confidentialité et la gestion des cookies.', visuel: I('bibliotheque-glace-nuit'), creditVisuel: 'Lucithen' },
+      { id: 'hub', titre: 'Notre communauté', icone: 'personnes', surTitre: 'Nouvelle Destinée', chapo: 'Qui nous sommes, ce que nous faisons et comment nous rejoindre.', visuel: I('mer-recif'), creditVisuel: 'FrostieGreen' },
       { id: 'credits', titre: 'Crédits', icone: 'pinceau', surTitre: 'Les artistes du wiki', chapo: 'Les artistes dont les œuvres illustrent le wiki : qui ils sont, ce qu’ils ont fait, où les suivre.', special: 'credits' },
+      { id: 'hauts-faits', titre: 'Les Hauts Faits', icone: 'etoile', surTitre: 'Distinctions, insignes et succès', chapo: 'Les insignes qui s’affichent sur les cartes de l’équipe : ce qu’ils récompensent et qui les a obtenus.', special: 'hauts-faits' },
+      { id: 'partenaires', titre: 'Partenaires', icone: 'lien', surTitre: 'Ils avancent avec nous', chapo: 'Les structures affiliées, les partenaires collaboratifs et les artistes partenaires de Nouvelle Destinée.', special: 'partenaires' },
     ] },
     { id: 'lrdf', titre: 'C’est quoi LRDF ?', icone: 'oeil', surTitre: 'Pour commencer', intro: 'La saga dont tout part, pour qui n’en a jamais lu une ligne.',
       banniere: I('dragonnets'), credit: 'Alizebe', rubriques: [
-      { id: 'origine', titre: 'Origine', icone: 'plume', surTitre: 'D’où ça vient', chapo: 'Qui a écrit la saga, comment elle est construite, et le chemin des livres de 2012 à aujourd’hui.', visuel: I('bibliotheque-glace-nuit'), creditVisuel: 'Lucithen' },
-      { id: 'resume', titre: 'Résumé de l’univers', icone: 'carte', surTitre: 'Sans révélation majeure', chapo: 'Le monde, ses continents et ce que racontent les cycles, sans gâcher la lecture.', visuel: I('clan-ciel-nuages'), creditVisuel: 'Joy Ang' },
+      { id: 'origine', titre: 'Origine', icone: 'plume', surTitre: 'D’où ça vient', chapo: 'Qui a écrit la saga, comment elle est construite, et le chemin des livres de 2012 à aujourd’hui.', visuel: I('royaume-nuit'), creditVisuel: 'Biohazardia' },
+      { id: 'resume', titre: 'Résumé de l’univers', icone: 'carte', surTitre: 'Sans révélation majeure', chapo: 'Le monde du tome 1, ses sept clans et un guide de lecture, sans rien gâcher.', visuel: I('canyon-nuit'), creditVisuel: 'Nightrizer' },
     ] },
     { id: 'bibliotheque', titre: 'Bibliothèque', icone: 'livre', surTitre: 'Les livres', intro: 'Les livres de la saga : les romans, les bandes dessinées, les Légendes et les nouvelles.',
-      banniere: I('bibliotheque-glace-nuit'), credit: 'Lucithen', arbre: 'non', rubriques: [
+      banniere: I('royaume-nuit'), credit: 'Biohazardia', arbre: 'non', rubriques: [
       { id: 'tomes', titre: 'Les tomes', icone: 'livre', surTitre: 'Les romans, cycle par cycle', affichage: 'livres', arbre: 'non', groupes: ['Cycle 1', 'Cycle 2', 'Cycle 3', 'Cycle 4'],
         groupesInfo: { 'Cycle 1': 'Tomes 1 à 5 · La Prophétie des Dragonnets', 'Cycle 2': 'Tomes 6 à 10 · La Montagne de Jade', 'Cycle 3': 'Tomes 11 à 15 · Le Continent perdu', 'Cycle 4': 'Tome 16 · En cours' },
         chapo: 'Chaque livre, son point de départ et ce qu’il apporte au monde, sans révélation sur l’intrigue.' },
@@ -44,11 +46,14 @@
     ] },
     { id: 'contribuer', titre: 'Nous rejoindre', icone: 'plume', surTitre: 'L’équipe', intro: 'Nouvelle Destinée est animée par des bénévoles. Voici les postes ouverts et comment postuler.',
       banniere: I('canyon-nuit'), credit: 'Nightrizer', rubriques: [
+      { id: 'equipe', titre: 'L’équipe', icone: 'compte', surTitre: 'Qui fait Nouvelle Destinée', chapo: 'Les membres de l’équipe de Nouvelle Destinée.', special: 'equipe' },
       { id: 'recrutement', titre: 'Recrutement', icone: 'personnes', surTitre: 'Postes ouverts', chapo: 'Les postes ouverts dans chaque pôle, l’âge demandé et comment postuler.', visuel: I('envol-karst'), creditVisuel: 'Nightrizer' },
     ] },
   ]
   const RUBRIQUES = {}
   SECTIONS.forEach((s) => s.rubriques.forEach((r) => (RUBRIQUES[r.id] = Object.assign(r, { section: s }))))
+  // Pages légales : hors des menus, accessibles depuis le pied de page
+  RUBRIQUES.legal = Object.assign({ id: 'legal', titre: 'Informations légales', icone: 'parchemin', surTitre: 'Mentions, CGU, confidentialité', chapo: 'Les mentions légales, les conditions d’utilisation, la politique de confidentialité et la gestion des cookies.', visuel: I('royaume-nuit'), creditVisuel: 'Biohazardia' }, { section: SECTIONS[0], cache: true })
 
   const TEINTES = ['lavande', 'mauve', 'ardoise', 'sauge', 'ambre', 'cuivre']
   const TEINTE_SECTION = { accueil: 'ambre', lrdf: 'lavande', bibliotheque: 'mauve', contribuer: 'sauge' }
@@ -79,16 +84,15 @@
   const memoire = { lire: (k) => { try { return localStorage.getItem(k) } catch (e) { return null } }, ecrire: (k, v) => { try { localStorage.setItem(k, v) } catch (e) {} } }
 
   // Illustrations : chemin d'une image du site (img/illustrations/nom) ou fichier complet (img/actus/x.gif)
-  const REMPLACEES = { plume: 'montagne-fendue', baignade: 'mer-recif', 'lecture-glace': 'bibliotheque-glace-nuit', 'bibliotheque-sable': 'bibliothecaire-lanterne', sablier: 'clan-ciel', 'fils-vision': 'clan-nuit', taverne: 'canyon-nuit', 'soleil-rouge': 'clan-ciel-nuages', magnolias: 'clan-pluie' }
+  const REMPLACEES_ANCIEN = { plume: 'montagne-fendue', baignade: 'mer-recif', 'lecture-glace': 'bibliotheque-glace-nuit', 'bibliotheque-sable': 'bibliothecaire-lanterne', sablier: 'clan-ciel', 'fils-vision': 'clan-nuit', taverne: 'canyon-nuit', 'soleil-rouge': 'clan-ciel-nuages', magnolias: 'clan-pluie' }
+  const REMPLACEES = { plume: 'envol-karst', baignade: 'mer-recif', 'lecture-glace': 'royaume-nuit', 'bibliotheque-sable': 'royaume-nuit', sablier: 'canyon-nuit', 'fils-vision': 'royaume-nuit', taverne: 'canyon-nuit', 'soleil-rouge': 'canyon-nuit', magnolias: 'feuille-portrait', 'bibliothecaire-lanterne': 'dragonnets', 'bibliotheque-glace-nuit': 'royaume-nuit', 'clan-ciel-nuages': 'canyon-nuit', 'montagne-fendue': 'envol-karst', 'tendresse-ciel': 'royaume-nuit' }
   const remplacee = (v) => { const m = /^img\/illustrations\/(.+)$/.exec(v || ''); return m && REMPLACEES[m[1]] ? I(REMPLACEES[m[1]]) : v }
   const imgSrc = (v, l) => (!v ? null : /\.(gif|png|jpe?g|webp)$/i.test(v) ? U(v) : U(`${remplacee(v)}-${l || 1600}.webp`))
   const absolue = (u) => (/^data:/.test(u) ? u : new URL(u, document.baseURI).href)
   const ILLUSTRATIONS = [
     [I('banniere-hcf'), 'Bannière HCF (falaise et soleil)', 'left 30%'], [I('dragonnets'), 'Les dragonnets'], [I('envol-karst'), 'Envol au-dessus des pitons'],
     [I('canyon-nuit'), 'Ailes étoilées sur le canyon'], [I('royaume-nuit'), 'Le couple royal et le palais'], [I('messager-hibou'), 'Le messager au hibou'],
-    [I('bibliotheque-glace-nuit'), 'Leçon à la bibliothèque'], [I('bibliothecaire-lanterne'), 'La bibliothécaire à la lanterne', 'center 15%'],
-    [I('clan-ciel-nuages'), 'Péril et Scarlet dans les nuages (tome 8)'], [I('montagne-fendue'), 'La Montagne de Jade (bande-annonce)'],
-    [I('mer-recif'), 'Le récif', 'center 18%'], [I('tendresse-ciel'), 'Le parent et le dragonnet', 'center 18%'],
+    [I('mer-recif'), 'Le récif', 'center 18%'],
     [I('feuille-portrait'), 'Dans les sous-bois', 'center 20%'], [I('sable-tendresse'), 'Tendresse dans les sables', 'center 12%'],
   ].map(([id, nom, pos]) => ({ id, nom, pos }))
   const posImg = (v) => { v = remplacee(v); const x = ILLUSTRATIONS.find((i) => i.id === v); return (x && x.pos) || '50% 50%' }
@@ -110,6 +114,10 @@
     couvertures: { nom: 'Couvertures des romans', src: 'img/couvertures/tome-1.webp' },
     'couvertures-bd': { nom: 'Bandes dessinées', src: 'img/couvertures/bd-1.webp' },
     blasons: { nom: 'Blasons des clans en vitrail', src: 'img/clans/ciel.webp' },
+    'carte-pyrrhia': { nom: 'Carte de Pyrrhia', src: 'img/cartes/pyrrhia-1400.webp', legende: 'Carte de Pyrrhia · illustration de [.yoro_](#r-credits), d’après la carte originale de [Mike Schley](#r-credits) · traduction de [yunskayz_14](#r-credits), pour HCF - Nouvelle Destinée' },
+    'portrait-skyline76': { nom: 'Portrait de Skyline76', src: 'img/equipe/skyline76-800.webp' },
+    'portrait-akhaten': { nom: 'Portrait d’Akhaten', src: 'img/equipe/akhaten-800.webp' },
+    'portrait-eclipse': { nom: 'Portrait d’Éclipse', src: 'img/equipe/eclipse-800.webp' },
   }
   const contributeurs = () => (D.credits || []).filter((c) => c.visible !== false).slice().sort((a, b) => (a.ordre || 0) - (b.ordre || 0) || String(a.nom).localeCompare(b.nom, 'fr'))
   const cleOeuvre = (v) => String(v || '').replace(/^img\/illustrations\//, '')
@@ -136,12 +144,13 @@
     const codes = []
     s = s.replace(/`([^`]+)`/g, (m, c) => { codes.push(c); return `\u0000${codes.length - 1}\u0000` })
     // [[id|texte]] : lien vers une page du wiki ; si la page n'est pas dans cette version, le texte reste sans lien
+    s = s.replace(/\[\[mail:([a-z]+)\]\]/g, (m, nom) => lienMail(nom))
     s = s.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, (m, id, txt) => {
       const p = PAGES.get(id)
       const libelle = txt || (p ? p.titre : id)
       return p ? `<a href="${lienPage(id)}">${libelle}</a>` : libelle
     })
-    s = s.replace(/\[([^\]]+)\]\((#[a-z0-9-]+|https?:\/\/[^\s)]+)\)/g, (m, txt, url) => `<a href="${url}"${url[0] !== '#' ? ' rel="noopener" target="_blank"' : ''}>${txt}</a>`)
+    s = s.replace(/\[([^\]]+)\]\((#[a-z0-9-]+|https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g, (m, txt, url) => `<a href="${url}"${/^https?:/.test(url) ? ' rel="noopener" target="_blank"' : ''}>${txt}</a>`)
     s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     s = s.replace(/(^|[^*])\*([^*\s][^*]*?)\*(?!\*)/g, '$1<em>$2</em>')
     s = s.replace(/\u0000(\d+)\u0000/g, (m, i) => `<code>${codes[+i]}</code>`)
@@ -161,6 +170,13 @@
     out.push(cur.trim())
     return out
   }
+  // Adresses mail : nom + domaine assemblés à l'affichage, pour que les robots de spam ne les lisent pas dans le code
+  const DOMAINE_MAIL = ['nouvelledestinee', 'fr'].join('.')
+  const lienMail = (nom) => { const a = nom + String.fromCharCode(64) + DOMAINE_MAIL; return `<a href="mailto:${a}">${a}</a>` }
+  function grilleCreateurs(liste) {
+    const ini = (n) => { const m = n.split(/\s+/).filter((x) => /^[A-ZÀ-Ý]/.test(x)); return (m[0][0] + (m.length > 1 ? m[m.length - 1][0] : '')).toUpperCase() }
+    return `<div class="createurs">${liste.map((c, i) => `<article class="createur${c.maison ? ' maison' : ''}"><span class="createur-medaillon" aria-hidden="true">${c.maison ? ico('livre') : esc(ini(c.nom))}</span><div><h3>${esc(c.nom)}</h3><span class="createur-role">${esc(c.role)}</span><p>${enLigne(esc(c.texte))}</p>${c.lien ? `<a class="createur-lien" href="${esc(c.lien)}"${/^https?:/.test(c.lien) ? ' target="_blank" rel="noopener"' : ''}>${esc(c.lienTexte || 'En savoir plus')} ${ico('fleche')}</a>` : ''}</div></article>`).join('')}</div>`
+  }
   function rendreTexte(src, opts) {
     opts = opts || {}
     const lignes = String(src || '').replace(/\r/g, '').split('\n')
@@ -175,6 +191,21 @@
         if (fin && l.trim() === ':::') { i++; return out.join('') }
         if (!l.trim()) { i++; continue }
         let m
+        if (l.trim() === ':::cartes') {
+          i++
+          const cartes = []
+          while (i < lignes.length && lignes[i].trim() !== ':::') { const x = lignes[i].trim().replace(/^-\s*/, ''); if (x) cartes.push(x.split(/\s+\|\s+/)); i++ }
+          i++
+          out.push(`<div class="faq-cartes">${cartes.map(([icone, titre, texte, lien]) => { const ext = /^https?:/.test(lien || ''), interne = /^#[a-z0-9-]+$/.test(lien || ''); const dedans = `<span class="faq-carte-ico">${ico(icone)}</span><span class="faq-carte-txt"><strong>${esc(titre)}</strong><small>${enLigne(esc(texte || ''))}</small></span>`; return ext || interne ? `<a class="faq-carte" href="${esc(lien)}"${ext ? ' target="_blank" rel="noopener"' : ''}>${dedans}${ico('fleche')}</a>` : `<div class="faq-carte">${dedans}</div>` }).join('')}</div>`)
+          continue
+        }
+        if ((m = l.match(/^:::clan\s+([a-z]+)\s+(.+)$/))) {
+          i++
+          const interieur = bloc(true), t = m[2].trim(), id = ancre(t)
+          if (!fin) toc.push({ niv: 3, t, id })
+          out.push(`<section class="fiche-clan" id="${id}" style="--halo:var(--${m[1]})">${blason(m[1]) ? `<img src="${blason(m[1])}" alt="Blason des ${esc(CLANS[m[1]] || '')}" loading="lazy">` : ''}<div><h3>${enLigne(esc(t))}</h3>${interieur}</div></section>`)
+          continue
+        }
         if ((m = l.match(/^:::(encadre|retenir|sanction|info|spoiler)\s*(.*)$/))) {
           i++
           const interieur = bloc(true)
@@ -184,6 +215,8 @@
           // m[1] === 'spoiler' : cette version ne publie aucun passage qui dévoile l'intrigue
           continue
         }
+        if ((m = l.trim().match(/^\[\[figure:([a-z0-9-]+)\]\]$/)) && OEUVRES_SPECIALES[m[1]]) { i++; const o = OEUVRES_SPECIALES[m[1]], a = auteurDe(m[1]); out.push(`<figure class="figure-page"><a href="${U(o.src)}" target="_blank" rel="noopener" title="Voir en grand"><img src="${U(o.src)}" alt="${esc(o.nom)}" loading="lazy"></a><figcaption>${o.legende ? enLigne(esc(o.legende)) : `${esc(o.nom)}${a ? ` · <a href="#r-credits">${esc(a.nom)}</a>` : ''}`}</figcaption></figure>`); continue }
+        if (l.trim() === '[[createurs]]') { i++; if (opts.createurs) out.push(grilleCreateurs(opts.createurs)); continue }
         if ((m = l.match(/^(#{1,4})\s+(.+)$/))) {
           const niv = Math.max(2, m[1].length)
           let t = m[2].trim()
@@ -243,7 +276,7 @@
     return Array.from(PAGES.values()).filter((p) => p.rubrique === rubrique).sort((a, b) => sens * ((a.ordre || 0) - (b.ordre || 0)) || String(a.titre).localeCompare(b.titre, 'fr'))
   }
   const lienRub = (rid) => { if (RUBRIQUES[rid] && RUBRIQUES[rid].special) return '#r-' + rid; const ps = pagesDe(rid); return ps.length === 1 ? '#p-' + ps[0].id : '#r-' + rid }
-  const compterRubrique = (id) => (RUBRIQUES[id] && RUBRIQUES[id].special === 'credits' ? contributeurs().length : pagesDe(id).length)
+  const compterRubrique = (id) => (RUBRIQUES[id] && RUBRIQUES[id].special === 'credits' ? contributeurs().length : RUBRIQUES[id] && RUBRIQUES[id].special === 'equipe' ? (D.equipe || []).length : RUBRIQUES[id] && RUBRIQUES[id].special === 'partenaires' ? Object.values(D.partenaires || {}).reduce((n, l) => n + l.length, 0) : RUBRIQUES[id] && RUBRIQUES[id].special === 'hauts-faits' ? (window.ND_INSIGNES ? window.ND_INSIGNES.CATALOGUE.length : 0) : pagesDe(id).length)
   function grouper(pages, rub) {
     const ordre = (rub && rub.groupes) || []
     const g = new Map()
@@ -264,13 +297,17 @@
   /* Routage                                                                 */
   /* ---------------------------------------------------------------------- */
   function routeCourante() {
-    const h = decodeURIComponent((location.hash || '').slice(1))
+    // Une adresse mal formée (par exemple un % isolé) ne doit pas faire planter la page
+    let h
+    try { h = decodeURIComponent((location.hash || '').slice(1)) } catch (e) { return { vue: 'introuvable' } }
     if (!h || h === 'accueil') return { vue: 'accueil' }
     if (h === 'recherche') return { vue: 'recherche' }
     let m
     if ((m = h.match(/^s-([a-z0-9-]+)$/))) return { vue: 'section', id: m[1] }
     if ((m = h.match(/^r-([a-z0-9-]+)$/))) return { vue: 'rubrique', id: m[1] }
     if ((m = h.match(/^p-([a-z0-9-]+)$/))) return { vue: 'page', id: m[1] }
+    if ((m = h.match(/^membre-([a-z0-9-]+)$/))) return { vue: 'membre', id: m[1] }
+    if ((m = h.match(/^hf-([a-z0-9-]+)$/))) return { vue: 'rubrique', id: 'hauts-faits', cible: 'hf-' + m[1] }
     if (/^h-/.test(h)) return { vue: 'ancre' }
     return { vue: 'introuvable' }
   }
@@ -280,6 +317,7 @@
     if (r.vue === 'rubrique') return RUBRIQUES[r.id] && RUBRIQUES[r.id].section.id
     if (r.vue === 'page') { const p = PAGES.get(r.id); return p && RUBRIQUES[p.rubrique] && RUBRIQUES[p.rubrique].section.id }
     if (r.vue === 'accueil') return 'accueil'
+    if (r.vue === 'membre') return 'contribuer'
     return null
   }
 
@@ -317,8 +355,9 @@
           ${SECTIONS.map((s) => `<div><h2>${ico(s.icone)} ${esc(s.titre)}</h2><ul>${s.rubriques.map((r) => `<li><a href="${lienRub(r.id)}">${esc(r.titre)} <span class="compteur">${compterRubrique(r.id)}</span></a></li>`).join('')}</ul></div>`).join('')}
         </div>
         <p class="pied-mentions">Projet de fans, sans but lucratif. <em>Les Royaumes de Feu</em> (<em>Wings of Fire</em>) sont l’œuvre de Tui T. Sutherland ; la communauté n’est affiliée ni à l’autrice ni à ses éditeurs. Les clans, personnages et récits cités appartiennent à leurs auteurs ; les couvertures reproduites restent la propriété de leurs ayants droit.</p>
+        <p class="pied-contact">${ico('lien')} Une erreur, un crédit manquant, une question ? Écris à ${lienMail('wiki')}</p>
         <nav class="pied-legal" aria-label="Informations légales">
-          <a href="#p-mentions-legales">Mentions légales</a><a href="#p-cgu">Conditions générales d’utilisation</a><a href="#p-confidentialite">Politique de confidentialité</a><a href="#r-credits">Crédits</a>
+          <a href="#p-mentions-legales">Mentions légales</a><a href="#p-cgu">Conditions générales d’utilisation</a><a href="#p-confidentialite">Politique de confidentialité</a><a href="#p-cookies">Cookies</a><a href="#r-credits">Crédits</a>
         </nav>
         <div class="pied-bas"><span>© 2026 HCF Nouvelle Destinée</span><span>Projet associatif</span><span>${pluriel(PAGES.size, 'page publiée', 'pages publiées')}</span></div>
       </div>`
@@ -584,6 +623,205 @@
         <p class="meta" style="margin-top:28px">Tu es l’artiste d’une de ces œuvres et tu veux corriger ton crédit ou la retirer du wiki ? Écris à l’équipe sur le Discord : c’est fait sans discussion.</p>
       </div></div>`
   }
+  /* L'équipe : cartes des membres (photo créditée, sinon blason du clan de cœur) */
+  const ROLES_ORDRE = ['Ailes de Feu', 'Administrateur', 'Assistant de Direction']
+  // Couleurs des rôles, reprises de l'organigramme de la CIE (codes exacts à confirmer)
+  const ROLE_COULEUR = { 'Ailes de Feu': '#a8612b', 'Administrateur': '#7b838c', 'Assistant de Direction': '#8a6a2c' }
+  const ROLES_DEF = { 'Ailes de Feu': 'Fondateurs et propriétaires de Nouvelle Destinée', 'Administrateur': 'Bras droit de la Direction', 'Assistant de Direction': 'Administratif de la Direction, comptes rendus du CA et annonces officielles' }
+  const badgeRole = (m) => `<span class="badge-role"${ROLE_COULEUR[m.role] ? ` style="background:${ROLE_COULEUR[m.role]};border-color:${ROLE_COULEUR[m.role]};color:#fff"` : ''} title="${esc(ROLES_DEF[m.role] || '')}">${esc(m.role)}</span>`
+  const auteursPortrait = (m) => (m.photo ? contributeurs().filter((c) => (c.oeuvres || []).includes('portrait-' + m.id)) : [])
+  const imgMembre = (m, cls) => (m.photo ? `<img src="${U(m.photo)}" alt="Portrait de ${esc(m.pseudo)}" style="object-position: center 30%">` : `<img class="${cls}" src="${blason(m.clan)}" alt="Blason des ${esc(CLANS[m.clan] || '')}">`)
+  // Rôle Étoile : distinction honorifique donnée par la Direction (échelon 3 : Nouvelle Destinée, 2 : communauté francophone, 1 : communauté internationale)
+  const ETOILE_DEF = { 3: 'Étoile, échelon 3 : un impact marquant sur Nouvelle Destinée', 2: 'Étoile, échelon 2 : un impact sur toute la communauté francophone des Royaumes de Feu', 1: 'Étoile, échelon 1 : un impact sur la communauté internationale de la saga' }
+  const INS = window.ND_INSIGNES
+  const etoile = (m) => (m.etoile && INS ? `<span class="etoile-role" title="${esc(ETOILE_DEF[m.etoile] || 'Étoile')}" aria-label="${esc(ETOILE_DEF[m.etoile] || 'Étoile')}">${INS.svg('etoile-' + m.etoile)}</span>` : '')
+  // Vitrine des Hauts Faits : distinctions obtenues, puis formation et succès (non obtenus grisés, condition au survol)
+  function moisDepuis(m) { if (!m.arrivee) return -1; const [a, mo] = m.arrivee.split('-').map(Number); return (new Date().getFullYear() - a) * 12 + (new Date().getMonth() + 1 - mo) }
+  function acquisMembre(m) {
+    const acquis = new Set(m.hautsFaits || [])
+    if (m.etoile) acquis.add('etoile-' + m.etoile)
+    const n = moisDepuis(m), palier = n >= 24 ? 3 : n >= 12 ? 2 : n >= 6 ? 1 : 0
+    for (let p = 1; p <= palier; p++) acquis.add('anciennete-' + p)
+    return { acquis, palier }
+  }
+  // Couleurs des pôles (charte CIE) pour l'insigne Référent de pôle
+  const POLE_COULEUR = { RH: '#3fae6a', MOS: '#2fc3b4', COM: '#e39cc2', DIT: '#d64545', RP: '#c9922e' }
+  const nomInsigne = (id, m) => { const x = INS.infos(id); if (id === 'fondateur' && m && m.fondateur) return m.fondateur; if (id === 'referent' && m && m.referent) return 'Référent du ' + m.referent; return x.nom }
+  const optInsigne = (id, m) => (id === 'referent' && m && m.referent ? { couleur: POLE_COULEUR[m.referent] } : undefined)
+  function lienInsigne(id, ok, m) {
+    const x = INS.infos(id); if (!x) return ''
+    const nom = nomInsigne(id, m)
+    return `<a class="hf-insigne${ok ? '' : ' manquant'}" href="#hf-${id}" data-nom="${esc(nom)}" data-cond="${esc((ok ? '' : 'Non obtenu · ') + x.condition)}" aria-label="${esc(nom)}${ok ? '' : ', non obtenu'} : ${esc(x.condition)}">${INS.svg(id, ok ? optInsigne(id, m) : undefined)}</a>`
+  }
+  // Vitrine des Hauts Faits : distinctions obtenues, puis formation et succès (non obtenus grisés)
+  function hautsFaits(m) {
+    if (!INS) return ''
+    const { acquis, palier } = acquisMembre(m)
+    const etoileMax = [1, 2, 3].find((e) => acquis.has('etoile-' + e))
+    const liste = []
+    for (const x of INS.CATALOGUE) {
+      const ok = acquis.has(x.id)
+      if (/^etoile-/.test(x.id)) { if (x.id === 'etoile-' + etoileMax) liste.push([x.id, true]); continue }
+      if (/^anciennete-/.test(x.id)) { const p = +x.id.slice(-1); if (p === palier || p === palier + 1) liste.push([x.id, ok]); continue }
+      if ((x.cat === 'distinction' || x.cat === 'partenariat') && !ok) continue
+      if (x.id === 'referent' && !ok) continue
+      liste.push([x.id, ok])
+    }
+    liste.sort((a, b) => b[1] - a[1])
+    return `<div class="hauts-faits"><a class="hf-titre" href="#r-hauts-faits">Les Hauts Faits</a><div class="hf-rang">${liste.map(([id, ok]) => lienInsigne(id, ok, m)).join('')}</div></div>`
+  }
+  // Page « Les Hauts Faits » : chaque insigne, ce qu'il récompense et qui l'a obtenu
+  const INTRO_CAT = { distinction: 'Attribuées par la Direction uniquement.', formation: 'Liés aux formations de Nouvelle Destinée. Les Sceaux de formation s’affichent au verso des cartes.', succes: 'Ils se débloquent avec le temps et le travail fourni. Sur les cartes, ceux qui ne sont pas encore obtenus s’affichent grisés.', partenariat: 'Ils marquent les structures et les artistes qui avancent avec Nouvelle Destinée. Voir la page [Partenaires](#r-partenaires).' }
+  const SECTIONS_PART = [['affilies', 'Les affiliés', 'affilie', 'Les structures affiliées à Nouvelle Destinée.'], ['collaboratifs', 'Les partenaires collaboratifs', 'collaboratif', 'Les communautés et les projets avec qui nous menons des actions communes.'], ['artistiques', 'Les partenaires artistiques', 'artiste', 'Les artistes qui illustrent et créent pour Nouvelle Destinée.']]
+  // Annonce d'un partenaire, reprise mot pour mot avec la mise en forme Discord (titres, citations, blocs, gras, liens)
+  function rendreAnnonce(txt) {
+    const inline = (t) => esc(t).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>').replace(/__([^_]+)__/g, '<u>$1</u>').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')
+    const out = []
+    let code = null
+    for (const l of String(txt).split('\n')) {
+      if (/^```/.test(l.trim())) { if (code === null) code = []; else { out.push(`<div class="ann-code">${code.map(esc).join('<br>')}</div>`); code = null } continue }
+      if (code !== null) { code.push(l); continue }
+      let m
+      if ((m = l.match(/^(#{1,3})\s+(.*)$/))) out.push(`<div class="ann-titre ann-t${m[1].length}">${inline(m[2])}</div>`)
+      else if ((m = l.match(/^>\s?(.*)$/))) out.push(`<div class="ann-citation">${inline(m[1])}</div>`)
+      else if (!l.trim()) out.push('<div class="ann-vide"></div>')
+      else out.push(`<div class="ann-ligne">${inline(l)}</div>`)
+    }
+    if (code) out.push(`<div class="ann-code">${code.map(esc).join('<br>')}</div>`)
+    return out.join('')
+  }
+  function vuePartenaires(r) {
+    const P = D.partenaires || {}
+    const carte = (x) => `<article class="createur">${x.logo ? `<img class="part-logo" src="${U(x.logo)}" alt="">` : `<span class="createur-medaillon" aria-hidden="true">${esc(String(x.nom).split(/\s+/).filter((w) => !/^(the|le|la|les|l’|l')$/i.test(w)).map((w) => (w.match(/[A-ZÀ-Ý0-9]/g) || [w[0]]).join('')).join('').slice(0, 2).toUpperCase())}</span>`}<div><h3>${esc(x.nom)}</h3>${x.role ? `<span class="createur-role">${esc(x.role)}</span>` : ''}${x.statut ? `<span class="part-statut">${esc(x.statut)}</span>` : ''}${x.texte ? `<p>${enLigne(esc(x.texte))}</p>` : ''}${x.annonce ? `<div class="annonce-partenaire">${rendreAnnonce(x.annonce)}</div>` : ''}${x.fondation ? `<p class="part-fondation">Fondation · ${esc(x.fondation)}</p>` : ''}${x.discord ? `<p class="part-fondation">Discord · ${esc(x.discord)}</p>` : ''}${(x.liens || []).filter((l) => lienSur(l.u)).length ? `<div class="part-liens">${x.liens.filter((l) => lienSur(l.u)).map((l) => `<a class="btn-mini" href="${esc(l.u)}" target="_blank" rel="noopener">${esc(l.t)} ${ico('fleche')}</a>`).join('')}</div>` : ''}${lienSur(x.lien) ? `<a class="createur-lien" href="${esc(x.lien)}" target="_blank" rel="noopener">${esc(x.lienTexte || 'Découvrir')} ${ico('fleche')}</a>` : ''}</div></article>`
+    const h = SECTIONS_PART.map(([k, titre, ins, sous]) => { const l = P[k] || []; return `<div class="groupe-titre"><div class="groupe-tete">${INS ? `<span class="part-insigne">${INS.svg(ins)}</span>` : ''}<h2>${titre}</h2><span>${pluriel(l.length, 'partenaire')}</span><span class="sous">${sous}</span></div></div>${l.length ? `<div class="createurs grille-partenaires">${l.map(carte).join('')}</div>` : '<p class="meta part-vide">Les premiers partenaires de cette catégorie arrivent bientôt.</p>'}` }).join('')
+    return `${sousNav(r.section, r.id)}
+      <section class="hero"><div class="conteneur">${ariane([{ t: r.section.titre, h: '#s-' + r.section.id }, { t: r.titre }])}
+        <div class="hero-grille"><div class="hero-ico">${ico(r.icone)}</div><div><div class="surtitre">${esc(r.surTitre)}</div><h1>${esc(r.titre)}</h1><p class="chapo">${esc(r.chapo)}</p></div></div>
+      </div></section>
+      <div class="conteneur avec-arbre">${arbreSection(r.section, r.id, null)}<div class="contenu-rub">${h}
+        <p class="meta" style="margin-top:30px">Envie de devenir partenaire ? Écris à ${lienMail('contact')} ou contacte l’équipe sur le serveur Discord.</p>
+      </div></div>`
+  }
+  function vueHautsFaits(r) {
+    const tous = (D.equipe || []).concat(D.anciens || [])
+    const titulaires = (id) => tous.filter((m) => (m.role ? acquisMembre(m).acquis : new Set(m.hautsFaits || [])).has(id))
+    const qui = (ms, id) => (ms.length ? `<p class="hf-qui"><strong>Obtenu par</strong> ${ms.map((m) => `<a href="#membre-${esc(m.id)}">${esc(m.pseudo)}</a>${id === 'referent' && m.referent ? ` (${esc(m.referent)})` : ''}`).join(', ')}</p>` : '<p class="hf-qui hf-personne">Pas encore attribué.</p>')
+    const fiche = (id, svg, nom, cond, note, ms) => `<article class="hf-fiche" id="hf-${id}">${svg}<div><h3>${esc(nom)}</h3><p>${esc(cond)}</p>${note ? `<p class="hf-note">${esc(note)}</p>` : ''}${qui(ms, id)}</div></article>`
+    let h = ''
+    for (const [cat, titre] of Object.entries(INS.CATEGORIES)) {
+      h += `<div class="groupe-titre"><div class="groupe-tete"><h2>${titre}</h2><span class="sous">${enLigne(esc(INTRO_CAT[cat]))}</span></div></div><div class="hf-liste">`
+      for (const x of INS.CATALOGUE.filter((y) => y.cat === cat)) h += fiche(x.id, INS.svg(x.id), x.nom, x.condition, x.note, titulaires(x.id))
+      if (cat === 'formation') for (const sc of SCEAUX) h += fiche('sceau-' + sc[0], sceau(sc, true).replace('sceau-f', 'sceau-f hf-sceau'), sc[2], sc[0] === 'lunes' ? 'Les cinq Sceaux réunis.' : 'Formation validée.', '', (D.equipe || []).filter((m) => (m.sceaux || []).includes(sc[0])))
+      h += '</div>'
+    }
+    return `${sousNav(r.section, r.id)}
+      <section class="hero"><div class="conteneur">${ariane([{ t: r.section.titre, h: '#s-' + r.section.id }, { t: r.titre }])}
+        <div class="hero-grille">${heroVisuel({ type: 'blasons', clans: (D.equipe || []).map((m) => m.clan).filter(Boolean).slice(0, 3) }, r.icone)}<div><div class="surtitre">${esc(r.surTitre)}</div><h1>${esc(r.titre)}</h1><p class="chapo">${esc(r.chapo)}</p></div></div>
+      </div></section>
+      <div class="conteneur avec-arbre">${arbreSection(r.section, r.id, null)}<div class="contenu-rub">${h}</div></div>`
+  }
+  // Sceaux de formation et Certification des Trois Lunes
+  const SCEAUX = [['cuivre', 'C', 'Sceau de Cuivre', '#e08a4c'], ['quartz', 'Q', 'Sceau de Quartz', '#e39cc2'], ['argent', 'A', 'Sceau d’Argent', '#c8cde2'], ['or', 'O', 'Sceau d’Or', '#e9b84f'], ['jade', 'J', 'Sceau de Jade', '#44cf98'], ['lunes', '', 'Certification des Trois Lunes', '#f1ead7']]
+  function sceau(sc, obtenu) {
+    const [id, l, nom, c] = sc
+    const anneaux = id === 'argent' || id === 'or' || id === 'jade' ? `<circle cx="32" cy="32" r="25" fill="none" stroke="${c}" stroke-width="1"/>` : id === 'quartz' ? `<circle cx="32" cy="32" r="26.5" fill="none" stroke="${c}" stroke-width=".7"/>` : ''
+    const perles = id === 'or' ? Array.from({ length: 24 }, (_, i) => { const a = (i / 24) * Math.PI * 2; return `<circle cx="${(32 + 28 * Math.cos(a)).toFixed(1)}" cy="${(32 + 28 * Math.sin(a)).toFixed(1)}" r=".9" fill="${c}"/>` }).join('') : ''
+    const centre = id === 'lunes' ? `<circle cx="32" cy="27" r="5" fill="${c}"/><path d="M21 27a4 4 0 1 0 0 .1M43 27a4 4 0 1 1 0 .1" fill="none" stroke="${c}" stroke-width="1.6"/><path d="M18 45l8-9 5 5 4-6 11 10z" fill="none" stroke="${c}" stroke-width="1.2"/>` : `<text x="32" y="40" text-anchor="middle" font-family="Spectral, Georgia, serif" font-weight="600" font-size="24" fill="${c}">${l}</text>`
+    return `<span class="sceau-f${obtenu ? '' : ' manquant'}" title="${esc(nom)}${obtenu ? '' : ' · en cours d’obtention'}"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1d1638" stroke="${c}" stroke-width="2.4"/>${anneaux}${perles}${centre}</svg></span>`
+  }
+  const rangeeSceaux = (m, grand) => `<div class="sceaux${grand ? ' grands' : ''}"><div class="sceaux-ligne">${SCEAUX.map((sc) => sceau(sc, (m.sceaux || []).includes(sc[0]))).join('')}</div>${(m.sceaux || []).length ? '' : '<small>En cours d’obtention</small>'}</div>`
+  const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+  function arrivee(m) {
+    if (!m.arrivee) return ''
+    const [a, mo] = m.arrivee.split('-').map(Number)
+    const n = (new Date().getFullYear() - a) * 12 + (new Date().getMonth() + 1 - mo)
+    const duree = n >= 12 ? pluriel(Math.floor(n / 12), 'an') : n > 0 ? `${n} mois` : 'ce mois-ci'
+    return `${MOIS[mo - 1].replace(/^./, (x) => x.toUpperCase())} ${a}${(m.hautsFaits || []).includes('fondateur') ? ', à la création' : ''} · depuis ${duree}`
+  }
+  function carteMembre(m) {
+    return `<a class="mini-id carte-equipe" href="#membre-${esc(m.id)}" style="--halo:var(--${m.clan || 'ciel'})">
+      <span class="mi-photo">${imgMembre(m, 'mi-blason')}</span>
+      <span class="mi-texte"><strong>${esc(m.pseudo)} ${etoile(m)}</strong><small>${esc(CLANS[m.clan] || '')}</small><span class="puces">${badgeRole(m)}</span></span>
+    </a>`
+  }
+  const initiales = (m) => String(m.pseudo).split(/\s+/).map((x) => x[0]).join('').slice(0, 2).toUpperCase()
+  function carteAncien(m) {
+    return `<a class="mini-id carte-ancien" href="#membre-${esc(m.id)}"><span class="mi-photo"><span class="ancien-ini">${esc(initiales(m))}</span></span><span class="mi-texte"><strong>${esc(m.pseudo)}</strong><small>${esc(m.mention || '')}</small></span></a>`
+  }
+  function vueAncien(m) {
+    const r = RUBRIQUES.equipe
+    return `${sousNav(r.section, r.id)}
+      <section class="hero"><div class="conteneur">${ariane([{ t: r.section.titre, h: '#s-' + r.section.id }, { t: r.titre, h: '#r-equipe' }, { t: m.pseudo }])}</div></section>
+      <div class="conteneur avec-arbre">${arbreSection(r.section, r.id, null)}<div class="contenu-rub">
+        <p><a class="btn-mini" href="#r-equipe">${ico('personnes')} Toute l’équipe</a></p>
+        <article class="carte-id carte-id-ancien" style="--filigrane:none;--halo:#8a7357">
+          <header class="ci-bandeau"><img src="${U('img/logo-petit.png')}" alt=""><span><small>Carte d’identité · Nouvelle Destinée</small><strong>Ils ont marqué l’histoire</strong></span></header>
+          <div class="ci-corps">
+            <div class="ci-photo"><div class="ci-cadre"><span class="ancien-ini">${esc(initiales(m))}</span></div>${INS ? `<div class="hauts-faits"><a class="hf-titre" href="#r-hauts-faits">Les Hauts Faits</a><div class="hf-rang">${(m.hautsFaits || []).map((id) => lienInsigne(id, true, m)).join('')}</div></div>` : ''}</div>
+            <div class="ci-infos"><h1>${esc(m.pseudo)}</h1><dl class="ci-grille">${m.mention ? `<div class="ci-ligne"><dt>Rôle</dt><dd>${esc(m.mention)}</dd></div>` : ''}${m.arrivee ? `<div class="ci-ligne"><dt>Arrivée</dt><dd>${esc(arrivee(m).split(' · ')[0])}</dd></div>` : ''}</dl></div>
+          </div>
+        </article>
+      </div></div>`
+  }
+  function vueMembre(id) {
+    const m = (D.equipe || []).find((x) => x.id === id)
+    const r = RUBRIQUES.equipe
+    if (!m) { const a = (D.anciens || []).find((x) => x.id === id); return a ? vueAncien(a) : vueIntrouvable() }
+    const vide = D.apercuChamps ? '<em class="ci-vide">À renseigner</em>' : ''
+    const ligne = (k, v, html) => (v ? `<div class="ci-ligne"><dt>${k}</dt><dd>${html ? v : enLigne(esc(v))}</dd></div>` : vide ? `<div class="ci-ligne"><dt>${k}</dt><dd>${vide}</dd></div>` : '')
+    const bloc = (titre, icone, v) => (v ? `<div class="ci-asavoir"><strong>${ico(icone)} ${titre}</strong><p>${enLigne(esc(v))}</p></div>` : vide ? `<div class="ci-asavoir"><strong>${ico(icone)} ${titre}</strong><p>${vide}</p></div>` : '')
+    const auteurs = auteursPortrait(m)
+    const bandeau = `<header class="ci-bandeau"><img src="${blason(m.clan)}" alt=""><span><small>Carte d’identité · L’équipe de Nouvelle Destinée</small><strong>${esc(m.pole || 'L’équipe')}</strong></span></header>`
+    const pied = (verso) => `<footer class="ci-pied"><span>Informations publiques, partagées avec l’accord de chaque membre</span><button type="button" class="btn-mini" data-action="retourner">${ico('fleche')} ${verso ? 'Revenir au recto' : 'Retourner la carte'}</button></footer>`
+    return `${sousNav(r.section, r.id)}
+      <section class="hero"><div class="conteneur">${ariane([{ t: r.section.titre, h: '#s-' + r.section.id }, { t: r.titre, h: '#r-equipe' }, { t: m.pseudo }])}</div></section>
+      <div class="conteneur avec-arbre">${arbreSection(r.section, r.id, null)}<div class="contenu-rub">
+        <p><a class="btn-mini" href="#r-equipe">${ico('personnes')} Toute l’équipe</a></p>
+        <div class="carte-flip" style="--halo:var(--${m.clan || 'ciel'})">
+        <article class="carte-id face-recto" style="--filigrane:none">
+          ${bandeau}
+          <div class="ci-corps">
+            <div class="ci-photo">
+              <div class="ci-cadre">${imgMembre(m, 'ci-blason')}</div>
+              ${auteurs.length ? `<p class="ci-legende">Portrait <span>· <a href="#r-credits">${auteurs.map((c) => esc(c.nom)).join(', base de ')}</a></span></p>` : m.clan ? `<p class="ci-legende">Blason des ${esc(CLANS[m.clan])}</p>` : ''}
+              ${hautsFaits(m)}
+            </div>
+            <div class="ci-infos">
+              <h1>${esc(m.pseudo)}</h1>
+              <div class="puces">${badgeRole(m)}</div>
+              <dl class="ci-grille">${ligne('Pôle', m.pole)}${ligne('Clan de cœur', CLANS[m.clan])}${m.age ? ligne('Âge', m.age) : ''}${ligne('Arrivée', arrivee(m))}${ligne('Discord', m.discord)}${ligne('Fluxer', m.fluxer)}${ligne('Tome préféré', m.tome)}${ligne('Personnage préféré', m.personnage)}${ligne('Présent sur Discord', m.presence)}${ligne('Spécialités', m.specialites)}${ligne('<span class="info-bulle" tabindex="0" data-nom="Sous les écailles" data-cond="Le personnage original de ce membre">Sous les écailles</span>', m.oc)}${m.contributions ? ligne('Pour le wiki', `<a href="#r-credits">${esc(m.contributions)}</a>`, true) : ''}</dl>
+            </div>
+          </div>
+          ${pied(false)}
+        </article>
+        <article class="carte-id face-verso" style="--filigrane:none" hidden>
+          ${bandeau}
+          <div class="ci-verso">
+            <h2>${esc(m.pseudo)}</h2>
+            ${bloc('Présentation', 'compte', m.presentation)}
+            ${bloc('Devise', 'plume', m.devise)}
+            ${bloc('Ce qu’il apporte à la communauté', 'etoile', m.apport)}
+            <div class="ci-sceaux"><strong>Sceaux de formation</strong>${rangeeSceaux(m, true)}</div>
+          </div>
+          ${pied(true)}
+        </article>
+        </div>
+      </div></div>`
+  }
+  const POLES_ORDRE = ['Direction', 'RH', 'MOS', 'COM', 'DIT', 'RP']
+  const POLES_SOUS = { Direction: 'Les Ailes de Feu, fondateurs de Nouvelle Destinée, et l’Assistance de Direction' }
+  function vueEquipe(r) {
+    const ms = (D.equipe || []).slice().sort((a, b) => ((ROLES_ORDRE.indexOf(a.role) + 99) % 99) - ((ROLES_ORDRE.indexOf(b.role) + 99) % 99) || (a.ordre || 0) - (b.ordre || 0))
+    return `${sousNav(r.section, r.id)}
+      <section class="hero"><div class="conteneur">${ariane([{ t: r.section.titre, h: '#s-' + r.section.id }, { t: r.titre }])}
+        <div class="hero-grille">${heroVisuel({ type: 'blasons', clans: ms.map((m) => m.clan).filter(Boolean).slice(0, 3) }, r.icone)}<div><div class="surtitre">${esc(r.surTitre)}</div><h1>${esc(r.titre)}</h1><p class="chapo">${esc(r.chapo)}</p></div></div>
+      </div></section>
+      <div class="conteneur avec-arbre">${arbreSection(r.section, r.id, null)}<div class="contenu-rub">
+        ${POLES_ORDRE.concat([...new Set(ms.map((m) => m.pole))].filter((p) => !POLES_ORDRE.includes(p))).map((pole) => { const g = ms.filter((m) => (m.pole || '') === pole); return g.length ? `<div class="groupe-titre"><div class="groupe-tete"><h2>${esc(pole || 'L’équipe')}</h2><span>${pluriel(g.length, 'membre')}</span>${POLES_SOUS[pole] ? `<span class="sous">${POLES_SOUS[pole]}</span>` : ''}</div></div><div class="grille-mini-id">${g.map(carteMembre).join('')}</div>` : '' }).join('')}
+        ${(D.anciens || []).length ? `<div class="groupe-titre"><div class="groupe-tete"><h2>Ils ont marqué l’histoire de Nouvelle Destinée</h2><span>${pluriel(D.anciens.length, 'membre')}</span><span class="sous">Fondateurs et anciens membres de l’équipe</span></div></div><div class="grille-mini-id">${D.anciens.map(carteAncien).join('')}</div>` : ''}
+        <p class="meta" style="margin-top:30px">Envie de rejoindre l’équipe ? Les postes ouverts sont sur la page <a href="#p-recrutement">Recrutement</a>.</p>
+      </div></div>`
+  }
   function bandeCredits() {
     const artistes = contributeurs().filter((c) => c.groupe !== 'officiel')
     if (!artistes.length) return ''
@@ -610,7 +848,7 @@
         ${lignes.length ? `<dl>${lignes.map((c) => `<dt>${esc(c.k)}</dt><dd>${esc(c.v)}</dd>`).join('')}</dl>` : ''}
         <a class="btn btn-or" href="${DISCORD}" target="_blank" rel="noopener" style="width:100%;text-align:center">Rejoindre le Discord</a>
         <small>discord.gg/nouvelledestinee</small>
-        ${h ? `<a class="lien-cote" href="#p-${h.id}">Tout sur le Hub →</a>` : ''}</aside>`
+        ${h ? `<a class="lien-cote" href="#p-${h.id}">Tout sur Nouvelle Destinée →</a>` : ''}</aside>`
     }
     if (nom === 'reglement') {
       const r = PAGES.get('reglement-wiki')
@@ -637,7 +875,7 @@
     vider()
     if (!/^\s*\{\{credits\}\}\s*$/m.test(String(p.corps || ''))) bandes.push(blocAccueil('credits'))
     return `
-      <section class="accueil-tete avec-banniere" style="--banniere: url('${absolue(imgSrc(ban.banniere))}')${posDe(ban.banniere)}"><div class="conteneur">
+      <section class="accueil-tete"><div class="conteneur">
         <img class="logo" src="${U('img/logo.png')}" alt="Nouvelle Destinée" width="300" height="207">
         <div>
           <div class="surtitre">HCF Nouvelle Destinée · le wiki</div>
@@ -645,7 +883,7 @@
           ${p.chapo ? `<p class="accroche">${esc(p.chapo)}</p>` : ''}
           <form class="accueil-recherche" data-form="recherche-accueil" role="search">${ico('loupe')}<input name="q" type="search" placeholder="Rechercher dans le wiki…" aria-label="Rechercher dans le wiki"><button class="btn btn-or" type="submit">Chercher</button></form>
         </div>
-      </div>${credit(ban.credit, ban.banniere)}</section>
+      </div></section>
       <div class="conteneur accueil-grille avec-arbre-g${cote.length ? '' : ' sans-cote'}">
         <div class="col-arbre">${arbreWiki()}</div>
         <div class="accueil-principal">${principal.join('')}</div>
@@ -658,7 +896,7 @@
     if (!s) return vueIntrouvable()
     const h = heroIntro(s.banniere, s.credit)
     const carte = (r, i) => {
-      const v = r.visuel ? { type: 'image', src: imgSrc(r.visuel, 800), pos: posImg(r.visuel) } : r.special === 'credits' ? { type: 'image', src: imgSrc(I('dragonnets'), 800) } : visuelsRubrique(r.id)
+      const v = r.visuel ? { type: 'image', src: imgSrc(r.visuel, 800), pos: posImg(r.visuel) } : r.special === 'equipe' ? { type: 'blasons', clans: (D.equipe || []).map((m) => m.clan).filter(Boolean).slice(0, 3) } : r.special === 'credits' ? { type: 'image', src: imgSrc(I('dragonnets'), 800) } : r.special === 'partenaires' ? { type: 'image', src: imgSrc(I('banniere-hcf'), 800) } : r.special === 'hauts-faits' ? { type: 'blasons', clans: (D.equipe || []).map((m) => m.clan).filter(Boolean).slice(0, 3) } : visuelsRubrique(r.id)
       return `<a class="carte teintee" href="${lienRub(r.id)}" style="--t: ${teinteCarte(i)}">${bandeau(v, r.icone)}<span class="surtitre">${esc(r.surTitre || '')}</span><h3>${esc(r.titre)}</h3><p>${esc(r.chapo || '')}</p><span class="pied-carte"><span>${r.special ? 'Consulter' : pluriel(compterRubrique(r.id), 'page')}</span>${ico('fleche')}</span></a>`
     }
     const arbre = avecArbre(s)
@@ -672,6 +910,9 @@
     const r = RUBRIQUES[id]
     if (!r) return vueIntrouvable()
     if (r.special === 'credits') return vueCredits(r)
+    if (r.special === 'equipe') return vueEquipe(r)
+    if (r.special === 'hauts-faits') return vueHautsFaits(r)
+    if (r.special === 'partenaires') return vuePartenaires(r)
     const pages = pagesDe(id)
     const groupes = grouper(pages, r)
     const avecGroupes = groupes.length > 1 || (groupes[0] && groupes[0][0])
@@ -708,11 +949,65 @@
       return `<a class="va" href="#p-${x.id}">${vis}<span><small>${esc(rub ? rub.titre : '')}</small><strong>${esc(x.titre)}</strong></span></a>`
     }).join('')}</div></section>`
   }
+  // Recrutement : un bandeau par pôle et une carte dépliable par rôle (le texte de la page reste entier)
+  const POLES_RECRUT = { MOS: ['#2fc3b4', 'bouclier'], COM: ['#e39cc2', 'megaphone'], RH: ['#3fae6a', 'personnes'], DIT: ['#d64545', 'code'], RP: ['#c9922e', 'plume'] }
+  const ICONE_POSTE = { 'Guide': 'boussole', 'Modérateur': 'bouclier', 'Chargé de Communication': 'megaphone', 'Animateur': 'etoile', 'Monteur vidéo': 'camera', 'Motion Designer': 'film', 'Graphiste': 'image', 'Illustrateur·rice': 'pinceau', 'Référent Adjoint RH': 'personnes', 'Chargé de Recrutement': 'loupe', 'Gestionnaire d’Administration du Personnel': 'dossier', 'Assistant RH': 'compte', 'Assistant de Formation': 'livre', 'Secrétaire RH': 'parchemin', 'Développeur': 'code', 'Technicien d’Infrastructures': 'serveur', 'Maître du Jeu': 'carte', 'Modérateur RP': 'bouclier', 'Animateur RP': 'plume', 'Référent de pôle': 'cible' }
+  function rendreRecrutement(src) {
+    const base = rendreTexte(src)
+    const idDe = (t) => (base.toc.find((x) => x.t === t) || {}).id || ''
+    let html = ''
+    for (const part of String(src).split(/\n(?=## )/)) {
+      const m = part.match(/^## (.+)\n?([\s\S]*)$/)
+      if (!m) { html += rendreTexte(part).html; continue }
+      const titre = m[1].trim(), corps = m[2]
+      if (!/^### /m.test(corps)) { html += `<h2 id="${idDe(titre)}">${enLigne(esc(titre))}</h2>${rendreTexte(corps).html}`; continue }
+      const sig = (titre.match(/\(([A-Z]+)\)/) || [])[1]
+      const [coul, icone] = POLES_RECRUT[sig] || ['#e9b84f', 'cible']
+      const morceaux = corps.split(/\n(?=### )/)
+      const intro = /^### /.test(morceaux[0]) ? '' : morceaux.shift()
+      html += `<section class="pole-recrut" style="--pole:${coul}"><h2 id="${idDe(titre)}"><span class="pole-ico">${ico(icone)}</span><span>${enLigne(esc(titre))}</span><small>${pluriel(morceaux.length, 'poste')}</small></h2>${intro.trim() ? rendreTexte(intro).html : ''}<div class="postes">`
+      for (const mo of morceaux) {
+        const pm = mo.match(/^### (.+)\n?([\s\S]*)$/)
+        const nom = pm[1].trim()
+        let reste = pm[2].trim()
+        const acc = reste.match(/^\*([^*\n]+)\*\s*(?:\n|$)/)
+        if (acc) reste = reste.slice(acc[0].length).trim()
+        const age = reste.match(/(dès|à partir de) (\d+) ans/)
+        html += `<details class="poste" id="${idDe(nom)}"><summary><span class="poste-ico">${ico(ICONE_POSTE[nom] || icone)}</span><span class="poste-txt"><strong>${esc(nom)}</strong>${acc ? `<small>${enLigne(esc(acc[1]))}</small>` : ''}</span>${age ? `<span class="poste-age">${age[1] === 'dès' ? 'Dès' : 'À partir de'} ${age[2]} ans</span>` : ''}${reste ? `<span class="poste-chev">${ico('chevron')}</span>` : ''}</summary>${reste ? `<div class="poste-corps">${rendreTexte(reste).html}</div>` : ''}</details>`
+      }
+      html += '</div></section>'
+    }
+    return { html, toc: base.toc }
+  }
+  const ICONE_FAQ = { 'À propos de cette FAQ': 'oeil', 'HCF - Nouvelle Destinée': 'etoile', 'Premiers pas': 'boussole', 'Vie de la communauté': 'flamme', 'Règles, sécurité & support': 'bouclier', 'Staff & organisation': 'personnes', 'Créations & projets': 'pinceau', 'Réseau, collaborations & mise en avant': 'carte', 'Rôleplay': 'griffe', 'Site & services Nouvelle Destinée': 'serveur', 'Données & confidentialité': 'cadenas', 'Questions diverses': 'liste', 'Besoin d’aide ?': 'megaphone', "Besoin d'aide ?": 'megaphone', 'Liens utiles & sources officielles': 'lien' }
+  const ILLUS_FAQ = { 'Vie de la communauté': 'dragonnets', 'Réseau, collaborations & mise en avant': 'sable-tendresse', 'Données & confidentialité': 'canyon-nuit' }
+  function rendreFAQ(src) {
+    const base = rendreTexte(src)
+    const idDe = (t) => (base.toc.find((x) => x.t === t) || {}).id || ''
+    const question = (q, r) => `<details class="faq-q" id="${idDe(q)}"><summary><span>${enLigne(esc(q))}</span>${ico('chevron')}</summary><div class="faq-r">${rendreTexte(r).html}</div></details>`
+    const morceaux = (txt, niv) => txt.split(new RegExp(`\\n(?=${'#'.repeat(niv)} )`))
+    let html = ''
+    for (const part of String(src).split(/\n(?=## )/)) {
+      const m = part.match(/^## (.+)\n?([\s\S]*)$/)
+      if (!m) { html += rendreTexte(part).html; continue }
+      const titre = m[1].trim(), ch = morceaux(m[2], 3)
+      const intro = /^### /.test(ch[0]) ? '' : ch.shift()
+      html += `<section class="faq-partie"><h2 id="${idDe(titre)}"><span class="pole-ico">${ico(ICONE_FAQ[titre] || 'boussole')}</span><span>${enLigne(esc(titre))}</span></h2>${intro.trim() ? rendreTexte(intro).html : ''}`
+      for (const c of ch) {
+        const cm = c.match(/^### (.+)\n?([\s\S]*)$/), t = cm[1].trim(), r = cm[2]
+        if (/^#### /m.test(r)) { const sous = morceaux(r, 4); const si = /^#### /.test(sous[0]) ? '' : sous.shift(); html += `<h3 class="faq-theme" id="${idDe(t)}">${enLigne(esc(t))}</h3>${si.trim() ? rendreTexte(si).html : ''}${sous.map((q) => { const qm = q.match(/^#### (.+)\n?([\s\S]*)$/); return question(qm[1].trim(), qm[2]) }).join('')}` } else html += question(t, r)
+      }
+      html += '</section>'
+      const il = ILLUS_FAQ[titre]
+      if (il) { const a = auteurDe(il); html += `<figure class="figure-page faq-illus"><img src="${imgSrc(I(il), 1600)}" alt="" loading="lazy"${opos(I(il))}>${a ? `<figcaption>Illustration · <a href="#r-credits">${esc(a.nom)}</a></figcaption>` : ''}</figure>` }
+    }
+    return { html, toc: base.toc.filter((t) => t.niv === 2) }
+  }
   function vuePage(id) {
     if (id === 'accueil') return vueAccueil()
     const p = PAGES.get(id)
     if (!p) return vueIntrouvable()
-    const rendu = rendreTexte(p.corps, { lettrine: p.lettrine, numerote: p.numerote })
+    const rendu = p.id === 'recrutement' ? rendreRecrutement(p.corps) : p.id === 'faq' ? rendreFAQ(p.corps) : rendreTexte(p.corps, { lettrine: p.lettrine, numerote: p.numerote, createurs: p.createurs })
     const rub = RUBRIQUES[p.rubrique]
     const freres = rub ? pagesDe(p.rubrique) : []
     const i = freres.findIndex((x) => x.id === p.id)
@@ -744,6 +1039,7 @@
       <div class="conteneur article-grille">
         <div class="col-arbre">${rub ? arbreSection(rub.section, rub.id, p.id) : ''}</div>
         <div class="corps${rendu.toc.filter((t) => t.niv === 2).length >= 5 ? ' long' : ''}">
+          ${p.sommaire ? `<nav class="sommaire-haut" aria-label="Sommaire"><strong>${ico('liste')} Sommaire</strong><ol>${rendu.toc.filter((t) => t.niv === 2).map((t) => `<li><button type="button" data-ancre="${t.id}">${esc(t.t)}</button></li>`).join('')}</ol></nav>` : ''}
           <div class="section d-1"><div class="colonne"><div class="bloc">${rendu.html || (p.rubrique === 'actus' && quandActu(p) ? `<p>Rendez-vous ${esc(quandActu(p).replace(/^Le /, 'le '))}.</p>` : '<p><em>Page en cours d’écriture.</em></p>')}</div></div></div>
           <div class="fin">Fin de la page</div>
           <div class="fin-ligne"><span class="meta">${p.publieLe ? 'Dernière mise à jour le ' + dateFr(p.publieLe) : ''}</span></div>
@@ -812,6 +1108,7 @@
     if (r.vue === 'rubrique' && RUBRIQUES[r.id]) return `${RUBRIQUES[r.id].titre} · ${base}`
     if (r.vue === 'section') { const s = SECTIONS.find((x) => x.id === r.id); return s ? `${s.titre} · ${base}` : base }
     if (r.vue === 'recherche') return `Recherche · ${base}`
+    if (r.vue === 'membre') { const m = (D.equipe || []).concat(D.anciens || []).find((x) => x.id === r.id); return m ? `${m.pseudo} · ${base}` : base }
     return base
   }
   function rendre() {
@@ -825,6 +1122,7 @@
       else if (r.vue === 'rubrique') html = vueRubrique(r.id)
       else if (r.vue === 'page') html = vuePage(r.id)
       else if (r.vue === 'recherche') html = vueRecherche()
+      else if (r.vue === 'membre') html = vueMembre(r.id)
       else html = vueIntrouvable()
     } catch (e) {
       console.error(e)
@@ -837,22 +1135,59 @@
     brancherSommaire()
     if (r.vue === 'recherche') { const c = $('#champ-recherche'); if (c) { if (S.rechercheInitiale) { c.value = S.rechercheInitiale; S.rechercheInitiale = ''; majRecherche() } c.focus() } }
     if (location.hash !== derniereRoute) { window.scrollTo(0, 0); derniereRoute = location.hash; document.title = titreDocument(r) }
+    if (r.cible) { const c = document.getElementById(r.cible); if (c) { c.scrollIntoView({ block: 'center' }); c.classList.add('hf-vise') } }
   }
 
   /* ---------------------------------------------------------------------- */
   /* Thème et événements                                                     */
   /* ---------------------------------------------------------------------- */
   function appliquerTheme(t) { document.documentElement.dataset.theme = t === 'sombre' ? 'sombre' : 'clair' }
-  window.addEventListener('hashchange', () => { S.ouvert = null; rendreCadre(); rendre() })
+  // Lien d'évitement : place le focus sur le contenu sans changer d'adresse
+  document.addEventListener('click', (ev) => { const l = ev.target.closest('.lien-evitement'); if (l) { ev.preventDefault(); const c = document.getElementById('contenu'); if (c) c.focus() } })
+  window.addEventListener('hashchange', () => { S.ouvert = null; masquerBulle(); rendreCadre(); rendre() })
+  let bulle = null, bulleSur = null
+  function montrerBulle(el) {
+    if (!bulle) { bulle = document.createElement('div'); bulle.className = 'hf-bulle'; bulle.setAttribute('role', 'tooltip'); document.body.appendChild(bulle) }
+    bulle.innerHTML = `<b>${esc(el.dataset.nom)}</b>${esc(el.dataset.cond)}${el.classList.contains('hf-insigne') ? `<small>${ACTIF_TACTILE() ? 'Touche encore pour en savoir plus' : 'Clique pour en savoir plus'}</small>` : ''}`
+    bulle.style.visibility = 'hidden'; bulle.classList.add('visible')
+    const r = el.getBoundingClientRect(), w = bulle.offsetWidth, hb = bulle.offsetHeight, vw = document.documentElement.clientWidth, marge = 8
+    const left = Math.min(Math.max(r.left + r.width / 2 - w / 2, marge), vw - w - marge)
+    let top = r.top - hb - 8
+    if (top < marge) top = r.bottom + 8
+    bulle.style.left = left + 'px'; bulle.style.top = top + 'px'; bulle.style.visibility = ''
+    bulleSur = el
+  }
+  function masquerBulle() { if (bulle) bulle.classList.remove('visible'); bulleSur = null }
+  const ACTIF_TACTILE = () => window.matchMedia('(hover: none)').matches
+  document.addEventListener('mouseover', (ev) => { const el = ev.target.closest('.hf-insigne, .info-bulle'); if (el && !ACTIF_TACTILE()) montrerBulle(el) })
+  document.addEventListener('mouseout', (ev) => { const el = ev.target.closest('.hf-insigne, .info-bulle'); if (el && !ACTIF_TACTILE() && !el.contains(ev.relatedTarget)) masquerBulle() })
+  document.addEventListener('focusin', (ev) => { const el = ev.target.closest('.hf-insigne, .info-bulle'); if (el && !ACTIF_TACTILE()) montrerBulle(el) })
+  document.addEventListener('focusout', (ev) => { if (ev.target.closest('.hf-insigne, .info-bulle')) masquerBulle() })
+  window.addEventListener('scroll', masquerBulle, { passive: true })
+  // Sur écran tactile : premier appui, la bulle ; second appui, la page des Hauts Faits
+  document.addEventListener('click', (ev) => {
+    const el = ev.target.closest('.hf-insigne, .info-bulle')
+    if (!el) { if (bulleSur) masquerBulle(); return }
+    if (el.classList.contains('info-bulle')) { if (bulleSur === el) masquerBulle(); else montrerBulle(el); return }
+    if (ACTIF_TACTILE() && bulleSur !== el) { ev.preventDefault(); montrerBulle(el) }
+  }, true)
   document.addEventListener('click', (ev) => {
     const ancre = ev.target.closest('[data-ancre]')
-    if (ancre) { const cible = document.getElementById(ancre.dataset.ancre); if (cible) cible.scrollIntoView({ behavior: 'smooth', block: 'start' }); return }
+    if (ancre) { const cible = document.getElementById(ancre.dataset.ancre); if (cible) { if (cible.tagName === 'DETAILS') cible.open = true; cible.scrollIntoView({ behavior: 'smooth', block: 'start' }) } return }
     const menu = ev.target.closest('[data-menu]')
     if (menu) { if (S.ouvert !== 'mobile') { S.ouvert = S.ouvert === menu.dataset.menu ? null : menu.dataset.menu; rendreCadre() } return }
     if (S.ouvert && S.ouvert !== 'mobile' && !ev.target.closest('.mega')) { S.ouvert = null; rendreCadre() }
     const b = ev.target.closest('[data-action]')
     if (!b) return
     if (b.dataset.action === 'theme') { const t = document.documentElement.dataset.theme === 'sombre' ? 'clair' : 'sombre'; appliquerTheme(t); memoire.ecrire('nd-theme', t); rendreCadre() }
+    if (b.dataset.action === 'retourner') {
+      const f = b.closest('.carte-flip'); if (!f) return
+      const recto = f.querySelector('.face-recto'), verso = f.querySelector('.face-verso')
+      const montrerVerso = verso.hidden
+      const echanger = () => { recto.hidden = montrerVerso; verso.hidden = !montrerVerso; f.classList.remove('tourne'); (montrerVerso ? verso : recto).querySelector('[data-action="retourner"]').focus() }
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return echanger()
+      f.classList.add('tourne'); setTimeout(echanger, 220); return
+    }
     if (b.dataset.action === 'burger') { S.ouvert = S.ouvert === 'mobile' ? null : 'mobile'; rendreCadre() }
   })
   document.addEventListener('submit', (ev) => {
