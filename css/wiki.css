@@ -3708,7 +3708,9 @@ img, video, svg, canvas, iframe { max-width: 100%; }
 /* Hauteurs d'écran : sur iPhone et Android, 100vh déborde sous la barre d'adresse */
 @supports (height: 100dvh) {
   .nav-principale { max-height: calc(100dvh - 64px); }
-  .col-arbre, .avec-arbre > .arbre-boite { max-height: calc(100dvh - 100px); }
+  @media (min-width: 1081px) {
+    .col-arbre, .avec-arbre > .arbre-boite { max-height: calc(100dvh - 100px); }
+  }
   .dialogue-struct { max-height: calc(100dvh - 40px); }
   .tbr-colle { max-height: calc(100dvh - 90px); }
   .dialogue-carte { height: 100dvh; }
